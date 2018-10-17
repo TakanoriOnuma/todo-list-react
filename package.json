@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.development.js",
     "build": "webpack --config webpack.config.production.js",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook -o .storybook-out"
   },
   "author": "",
   "license": "ISC",
