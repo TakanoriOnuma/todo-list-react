@@ -13,6 +13,7 @@
     "length-zero-no-unit": true,
     "media-feature-name-no-vendor-prefix": true,
     "number-leading-zero": "never",
-    "string-quotes": "single"
+    "string-quotes": "single",
+    "selector-list-comma-newline-after": "always-multi-line"
   }
 }
