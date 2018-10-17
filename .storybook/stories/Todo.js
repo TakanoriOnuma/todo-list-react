@@ -22,7 +22,7 @@ function todoData(defaultValue) {
   const id = text('id', defaultValue.id || 'default');
   const isDone = boolean('isDone', defaultValue.isDone || false);
   const todoText = text('text', defaultValue.text || 'todo');
-  const deadline = date('deadline', defaultValue.deadlline || new Date());
+  const deadline = date('deadline', defaultValue.deadline || new Date());
   return {
     id,
     isDone,
