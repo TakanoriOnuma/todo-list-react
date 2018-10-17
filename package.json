@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.development.js",
-    "build": "webpack --config webpack.config.production.js"
+    "build": "webpack --config webpack.config.production.js",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +25,8 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/react": "^3.4.11",
     "autoprefixer": "^9.1.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",

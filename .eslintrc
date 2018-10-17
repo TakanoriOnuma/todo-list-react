@@ -3,7 +3,8 @@
     "react"
   ],
   "globals": {
-    "process": true
+    "process": true,
+    "module": false
   },
   "env": {
     "browser": true,

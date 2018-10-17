@@ -18,18 +18,18 @@ function formatDate(date) {
 
 const propTypes = {
   todo: PropTypes.shape({
-    id: PropTypes.number,
-    isDone: PropTypes.bool,
-    deadline: PropTypes.instanceOf(Date),
-    text: PropTypes.string
-  }),
-  onStatusChange: PropTypes.func,
-  onDelete: PropTypes.func
+    id: PropTypes.string.isRequired,
+    isDone: PropTypes.bool.isRequired,
+    deadline: PropTypes.instanceOf(Date).isRequired,
+    text: PropTypes.string.isRequired
+  }).isRequired,
+  onStatusChange: PropTypes.func.isRequired,
+  onDelete: PropTypes.func.isRequired
 };
 const Todo = (props) => {
   const { todo } = props;
   return (
-    <li
+    <div
       key={todo.id}
       className={classNames(styles.todo, {
         [styles.todo_done]: todo.isDone
@@ -50,7 +50,7 @@ const Todo = (props) => {
         />
       </div>
       <div className={styles.todo__text}>{todo.text}</div>
-    </li>
+    </div>
   );
 };
 Todo.propTypes = propTypes;

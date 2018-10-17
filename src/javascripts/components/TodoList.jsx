@@ -57,7 +57,7 @@ export default class TodoList extends Component {
           onFinishAll={() => { this.setState({ isAppearAnimationFinish: true }); }}
         >
           {todoList.map((todo) => (
-            <div
+            <li
               key={todo.id}
               className={styles.list__item}
             >
@@ -66,7 +66,7 @@ export default class TodoList extends Component {
                 onStatusChange={this.props.onStatusChange}
                 onDelete={this.props.onDelete}
               />
-            </div>
+            </li>
           ))}
         </FlipMove>
       </div>
